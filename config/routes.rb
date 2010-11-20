@@ -1,4 +1,6 @@
 Mem::Application.routes.draw do
+  resources :members
+
   root :to => 'page#home'
   match '/home' => 'page#home'
   match '/about' => 'page#about'
